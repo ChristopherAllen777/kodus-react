@@ -7,7 +7,10 @@ import { Router, Route, Link, IndexRoute, browserHistory } from 'react-router';
 import reducers from './reducers';
 import Homepage from './components/Homepage';
 import Nav from './Nav';
-import OtherRouteSample from './components/OtherRouteSample';
+import DetailListing from './components/DetailListing';
+import ThankYou from './components/ThankYou';
+import ThankYouMaintenance from './components/ThankYouMaintenance';
+import Register from './components/Register';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
@@ -16,7 +19,10 @@ ReactDOM.render(
       <Router history={browserHistory}>
           <Route path="/" component={Nav}>
               <IndexRoute component={Homepage}/>
-              <Route path='/other-route' component={OtherRouteSample}/>
+              <Route path='/detail' component={DetailListing}/>
+              <Route path='/thankyou' component={ThankYou}/>
+              <Route path='/thankyoumaintenance' component={ThankYouMaintenance}/>
+              <Route path='/users/register' component={Register}/>
           </Route>
     </Router>
   </Provider>

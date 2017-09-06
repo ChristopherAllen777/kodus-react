@@ -11,6 +11,10 @@ import DetailListing from './components/DetailListing';
 import ThankYou from './components/ThankYou';
 import ThankYouMaintenance from './components/ThankYouMaintenance';
 import Register from './components/Register';
+import OtherRouteSample from './components/OtherRouteSample';
+import Login from './components/Login';
+import Maintenance from './components/Maintenance';
+import Property from './components/Property'
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
@@ -23,6 +27,10 @@ ReactDOM.render(
               <Route path='/thankyou' component={ThankYou}/>
               <Route path='/thankyoumaintenance' component={ThankYouMaintenance}/>
               <Route path='/users/register' component={Register}/>
+              <Route path='/other-route' component={OtherRouteSample}/>
+              <Route path='/users/login' component={Login}/>
+              <Route path='/maintenance' component={Maintenance}/>
+              <Route path='/rental' component={Property}/>
           </Route>
     </Router>
   </Provider>

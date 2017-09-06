@@ -22,6 +22,10 @@ export default class Nav extends React.Component {
                             <li><Link activeClassName="active" to="/thankyou" onlyActiveOnIndex>Thank You</Link></li>
                             <li><Link activeClassName="active" to="/thankyoumaintenance" onlyActiveOnIndex>Thank You Maintenance</Link></li>
                             <li><Link activeClassName="active" to="/users/register" onlyActiveOnIndex>Register</Link></li>
+                            <li><Link activeClassName="active" to="/other-route" onlyActiveOnIndex>Other route</Link></li>
+                            <li><Link activeClassName="active" to="/users/login" onlyActiveOnIndex>User Login</Link></li>
+                            <li><Link activeClassName="active" to="/maintenance" onlyActiveOnIndex>Maintenance</Link></li>
+                            <li><Link activeClassName="active" to="/rental" onlyActiveOnIndex>Property</Link></li>
                         </ul>
                     </div>
                 </nav>

@@ -8,6 +8,9 @@ import reducers from './reducers';
 import Homepage from './components/Homepage';
 import Nav from './Nav';
 import OtherRouteSample from './components/OtherRouteSample';
+import Login from './components/Login';
+import Maintenance from './components/Maintenance';
+import Property from './components/Property'
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
@@ -17,6 +20,9 @@ ReactDOM.render(
           <Route path="/" component={Nav}>
               <IndexRoute component={Homepage}/>
               <Route path='/other-route' component={OtherRouteSample}/>
+              <Route path='/users/login' component={Login}/>
+              <Route path='/maintenance' component={Maintenance}/>
+              <Route path='/rental' component={Property}/>
           </Route>
     </Router>
   </Provider>

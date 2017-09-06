@@ -19,6 +19,9 @@ export default class Nav extends React.Component {
                         <ul className="nav navbar-nav">
                             <li><Link activeClassName="active" to="/" onlyActiveOnIndex>Home</Link></li>
                             <li><Link activeClassName="active" to="/other-route" onlyActiveOnIndex>Other route</Link></li>
+                            <li><Link activeClassName="active" to="/users/login" onlyActiveOnIndex>User Login</Link></li>
+                            <li><Link activeClassName="active" to="/maintenance" onlyActiveOnIndex>Maintenance</Link></li>
+                            <li><Link activeClassName="active" to="/rental" onlyActiveOnIndex>Property</Link></li>
                         </ul>
                     </div>
                 </nav>

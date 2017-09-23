@@ -7,12 +7,23 @@ module.exports = {
     publicPath: '/',
     filename: 'bundle.js'
   },
+  devtool: 'eval-source-map',
   module: {
     loaders: [{
-      exclude: /node_modules/,
+      // exclude: /node_modules/,
       loader: 'babel',
       query: {
         presets: ['react', 'es2015', 'stage-1']
+      }
+    },
+    {
+      test: /\.svg$/,
+      loader: 'react-svg',
+      query: {
+        svgo: {
+          plugins: [{removeTitle: false}],
+          floatPrecision: 2
+        }
       }
     }]
   },

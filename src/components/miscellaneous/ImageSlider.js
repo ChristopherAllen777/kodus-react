@@ -31,12 +31,12 @@ export default class ImageSlider extends MyComponent {
     render() {
         let image_url = this.props.images[this.state.image_index];
 
-        let leftButtonText = "&#10094;";
+        let leftButtonText = "<";
         if (this.state.image_index == 0) {
             leftButtonText = null;
         }
 
-        let rightButtonText = "&#10095;";
+        let rightButtonText = ">";
         if (this.state.image_index == (this.props.images.length - 1)) {
             rightButtonText = null;
         }

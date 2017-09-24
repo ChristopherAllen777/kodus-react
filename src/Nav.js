@@ -26,6 +26,7 @@ export default class Nav extends React.Component {
                             <li><Link activeClassName="active" to="/users/login" onlyActiveOnIndex>User Login</Link></li>
                             <li><Link activeClassName="active" to="/maintenance" onlyActiveOnIndex>Maintenance</Link></li>
                             <li><Link activeClassName="active" to="/rental" onlyActiveOnIndex>Property</Link></li>
+                            {/* <li><Link activeClassName="active" to="/api/:model_name" onlyActiveOnIndex>API GET</Link></li> */}
                         </ul>
                     </div>
                 </nav>

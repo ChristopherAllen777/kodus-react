@@ -77,7 +77,7 @@ export default class Property extends Component {
 		<p> USD / Month </p>
 		<h4>Beds: 4 |  Bath: 4</h4>
 		
-		<a href="/users/details"><button type="button" class="button button1">
+		<a href="/users/details"><button type="button" className="button button1">
   			<span className="glyphicon glyphicon-search" aria-hidden="true"></span> View Details
 		</button></a>
 	</div>
@@ -100,11 +100,11 @@ export default class Property extends Component {
 		src="http://www.adeptstudios.com/images/real-estate-photography-fort-lauderdale/real-estate-photography-fort-lauderdale-0023.jpg"> */}
 
 		<div style= { { width: '220px',  display: 'block', margin: 'auto', width: '100%',  boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' } } className="w3-content w3-display-container">
-			<img class="mySlides2" src="https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/20664569_10159233973105397_8131932104020616398_n.jpg?oh=b671a890a2c355b0dbc3bda988d1b3f4&oe=59EF537A" style= { { width: '100%' } }/>
-			<img class="mySlides2" src="https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/20770288_10159233963145397_3756501036429277570_n.jpg?oh=fd21373ed48be921bdcdcaee4126ce22&oe=59EFD2ED" style= { { width: '100%' } }/>
-			<img class="mySlides2" src="https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/20664813_10159233963140397_3185855072053004134_n.jpg?oh=2a1bf89f63c021034725141f8b4407f1&oe=5A32E164" style= { { width: '100%' } }/>
-			<img class="mySlides2" src="https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/20728279_10159233963245397_6375633952423366008_n.jpg?oh=2b1552be59db3a904e8c4a2ab85822c1&oe=5A28ABBE" style= { { width: '100%' } }/>
-			<img class="mySlides2" src="https://scontent-dft4-1.xx.fbcdn.net/v/t31.0-8/20689907_10159233963255397_6662457968072453830_o.jpg?oh=a930616fedb1230cbb4bb0cc367987ff&oe=59F00437" style= { { width: '100%' } }/>
+			<img className="mySlides2" src="https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/20664569_10159233973105397_8131932104020616398_n.jpg?oh=b671a890a2c355b0dbc3bda988d1b3f4&oe=59EF537A" style= { { width: '100%' } }/>
+			<img className="mySlides2" src="https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/20770288_10159233963145397_3756501036429277570_n.jpg?oh=fd21373ed48be921bdcdcaee4126ce22&oe=59EFD2ED" style= { { width: '100%' } }/>
+			<img className="mySlides2" src="https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/20664813_10159233963140397_3185855072053004134_n.jpg?oh=2a1bf89f63c021034725141f8b4407f1&oe=5A32E164" style= { { width: '100%' } }/>
+			<img className="mySlides2" src="https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/20728279_10159233963245397_6375633952423366008_n.jpg?oh=2b1552be59db3a904e8c4a2ab85822c1&oe=5A28ABBE" style= { { width: '100%' } }/>
+			<img className="mySlides2" src="https://scontent-dft4-1.xx.fbcdn.net/v/t31.0-8/20689907_10159233963255397_6662457968072453830_o.jpg?oh=a930616fedb1230cbb4bb0cc367987ff&oe=59F00437" style= { { width: '100%' } }/>
 
 			<button className="w3-button w3-black w3-display-left" onclick="plusDivs2(-1)">&#10094;</button>
 			<button style= { { float: 'right' } } className="w3-button w3-black w3-display-right" onclick="plusDivs2(1)">&#10095;</button>
@@ -150,7 +150,7 @@ export default class Property extends Component {
 		<p> USD / Month </p>
 		<h4>Beds: 4 |  Bath: 4</h4>
 		
-		<a href="/users/details"><button type="button" class="button button1">
+		<a href="/users/details"><button type="button" className="button button1">
   			<span className="glyphicon glyphicon-search" aria-hidden="true"></span> View Details
 		</button></a>
 	</div>

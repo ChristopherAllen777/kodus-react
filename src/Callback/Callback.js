@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
-import Loading from './loading.svg';
+// import Loading from './loading.svg';
+import { RingLoader } from 'react-spinners';
 
 class Callback extends Component {
+    constructor(props) {
+        super(props);
+        this.state ={
+            loading: true
+        }
+    }
     render() {
         const style = {
             position: 'absolute',
@@ -18,7 +25,10 @@ class Callback extends Component {
 
         return (
             <div style={style}>
-                <Loading />
+                <RingLoader
+                    color={'#123abc'}
+                    loading={this.state.loading}
+                />
             {/* <img src={loading} alt="loading"/> */}
             {/* <div dangerouslySetInnerHTML={{__html: loading}} /> */}
           </div>

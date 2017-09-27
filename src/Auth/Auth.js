@@ -29,9 +29,9 @@ export default class Auth extends Component {
     this.auth0.parseHash((err, authResult) => {
       if (authResult && authResult.accessToken && authResult.idToken) {
         this.setSession(authResult);
-        history.replace('/thankyou');
+          window.location = '/thankyou';
       } else if (err) {
-        history.replace('/thankyou');
+        window.location = '/thankyou';
         console.log(err);
         alert(`Error: ${err.error}. Check the console for further details.`);
       }

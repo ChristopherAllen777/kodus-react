@@ -53,21 +53,19 @@ module.exports = function(sequelize, DataTypes) {
   
     });
   
-    /* Need to Add Foreign Keys
-    Rental.associate = function(models) {
-      // Property Author with Tenant
-      Rental.belongsTo(models.Landlord, {
-        foreignKey: {
-          allowNull: false
-        }
-      });
-      Rental.hasMany(models.Tenant, {
-          foreignKey: {
-          allowNull: false
-        }
-      });
-    };
-  */
+    // Property.associate = function(models) {
+    //   // Only 1 Propoerty Author with Tenant
+    //   Property.belongsTo(models.Landlord, {
+    //     foreignKey: {
+    //       allowNull: false
+    //     }
+    //   });
+    //   Property.hasMany(models.UNIT, {
+    //       foreignKey: {
+    //       allowNull: false
+    //     }
+    //   });
+    // };
   
     return Property;
   };

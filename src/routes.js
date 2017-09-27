@@ -4,6 +4,7 @@ import Nav from './Nav';
 import Callback from './Callback/Callback';
 import Auth from './Auth/Auth';
 import history from './history';
+import Profile from './Profile/Profile';
 
 import Homepage from './components/Homepage';
 // import Nav from './Nav';
@@ -31,9 +32,13 @@ export const makeMainRoutes = () => {
               {/* <Route path="/" component={Nav} auth={auth}> */}
                 
               <Route path="/" render={(props) => <Nav auth={auth} {...props} />} />
-                  {/* <IndexRoute component={Homepage}/> */}
-             
-              {/* <Route path="/home" render={(props) => <Home auth={auth} {...props} />} /> */}
+              {/* <Route path="/profile" render={(props) => (
+                  !auth.isAuthenticated() ? (
+                      <Redirect to="/"/>
+                  ) : (
+                      <Profile auth={auth} {...props} />
+                  )
+              )} /> */}
               <Route path="/callback" render={(props) => {
                   handleAuthentication(props);
                   return <Callback {...props} />
@@ -41,7 +46,6 @@ export const makeMainRoutes = () => {
               
               <Switch>
               <Route exact path="/" component={Homepage}/>
-              {/* <Route path="/home" component={Home}/> */}
               <Route path="/detail" component={DetailListing} />
               <Route path='/thankyou' component={ThankYou}/>
               <Route path='/thankyoumaintenance' component={ThankYouMaintenance}/>
@@ -50,6 +54,13 @@ export const makeMainRoutes = () => {
               <Route path='/users/login' component={Login}/>
               <Route path='/maintenance' component={Maintenance}/>
               <Route path='/rental' component={Property}/>
+              <Route path="/profile" render={(props) => (
+                  !auth.isAuthenticated() ? (
+                      <Redirect to="/"/>
+                  ) : (
+                      <Profile auth={auth} {...props} />
+                  )
+              )} />
               </Switch>
               {/* <Route path='/detail' component={DetailListing}/> */}
               

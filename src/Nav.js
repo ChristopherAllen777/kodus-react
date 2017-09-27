@@ -57,6 +57,17 @@ export default class Nav extends Component {
                   <Button
                     bsStyle="primary"
                     className="btn-margin"
+                    onClick={this.goTo.bind(this, 'profile')}
+                  >
+                    Profile
+                  </Button>
+                )
+            }
+            {
+              isAuthenticated() && (
+                  <Button
+                    bsStyle="primary"
+                    className="btn-margin"
                     onClick={this.logout.bind(this)}
                   >
                     Log Out

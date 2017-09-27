@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import MapShowRestaurants from './MapShowRestaurants';
 
 export default class Property extends Component {
     render() {
@@ -11,6 +12,7 @@ export default class Property extends Component {
 <div id="comment">
 	Search through our list of properties. View the details to learn more about one that interests you!
 </div>
+			<MapShowRestaurants />
 </div>
 
 

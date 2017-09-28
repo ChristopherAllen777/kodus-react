@@ -30,7 +30,7 @@ app.use(bodyParser.text());
 app.use(bodyParser.json({ type: "application/vnd.api+json" }));
 
 // Import routes and give the server access to them
-require("./controllers/controller.js")(app);
+require("./routes/restless.js")(app);
 
 
 // Syncing our sequelize models and then starting our express app

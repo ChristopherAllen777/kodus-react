@@ -1,7 +1,64 @@
 import React, { Component } from 'react';
+import axios from "axios";
 
-export default class LandlordInfo extends Component {
+import MyComponent from "./utils/MyComponent";
+import InputBox from "./forms/InputBox";
+
+let INPUT_FIELD_DATA = [
+	{slug: 'firstName', text: "First Name"},
+	{slug: 'middleName', text: "Middle Name"},
+	{slug: 'lastName', text: "Last Name"},
+	// {slug: 'firstName', text: "First Name"},
+	// {slug: 'firstName', text: "First Name"},
+	// {slug: 'firstName', text: "First Name"},
+];
+
+function pluckInputFields(fields, this_value) {
+	let data = {};
+	for (let field of fields) {
+		data[field] = this_value[field].value;
+	}
+	return data;
+}
+
+
+export default class LandlordInfo extends MyComponent {
+
+	constructor(props) {
+		let custom_methods = [
+			'submitForm',
+		];
+		super(props, custom_methods);
+		this.state = {};
+	}
+
+	submitForm() {
+		// alert(this.firstName.value);
+		// alert(this.middleName.value);
+		// alert(this.lastName.value);
+
+		let fields = INPUT_FIELD_DATA.map(function(dataset) {
+			return dataset.slug;
+		});
+
+		let post_body = pluckInputFields(fields, this);
+		axios.post("/api/landlord", body)
+		  .then(function(response) {
+			console.log(`Yay, ${response}`);
+		  })
+		  .catch(function(error) {
+			console.log(`Awww snap, ${error}`);
+		  })
+	}
+
     render () {
+		let self = this;
+		let inputBoxes = INPUT_FIELD_DATA.map(function(dataset) {
+			return (
+				<InputBox slug={dataset.slug} text={dataset.text} this_value={self} />
+			)
+		});
+
         return (
         <div>
         <div className ="maincontainer">
@@ -21,18 +78,25 @@ export default class LandlordInfo extends Component {
 							<option value="Mrs.">Mrs.</option>
 						</select>
 					</div>
-					<div className = "form-group">
+					{/* <div className = "form-group">
 						<label className="control-label">First Name  <span className='text text-error'></span> </label>
-						<input id="firstName" name="firstName" type="text" className="required span5  alphanumeric" />
+						<input id="firstName" name="firstName" type="text" className="required span5  alphanumeric"
+							   ref={(element) => {this.firstName = element}} />
 					</div>	
-					<div className = "form-group">				
+					 <div className = "form-group">		
 						<label className="control-label">Middle Name </label>
-						<input id="middleName" name="middleName" type="text"  className=" span5  alphanumeric"  />
-					</div>
-					<div className = "form-group">	
+						<input id="middleName" name="middleName" type="text"  className=" span5  alphanumeric"  ref={(element) => {this.middleName = element}} />
+					</div> */}
+
+					{/* <InputBox text="Middle Name" slug="middleName" this_value={this}/> */}
+
+					{inputBoxes}
+
+
+					{/* <div className = "form-group">	
 						<label className="control-label">Last Name <span className='text text-error'></span> </label>
-						<input id="lastName" name="lastName" type="text" className="required span5  alphanumeric" />		
-					</div>  
+						<input id="lastName" name="lastName" type="text" className="required span5  alphanumeric" ref={(element) => {this.lastName = element}} />		
+					</div>   */}
                     <div className = "form-group">	
 						<label className="control-label">Phone1 </label>
 						<input id="phone1" name="phone1" type="text" maxLength="12" size = "12" className="required phone1 span8  nothing" placeholder="512-555-5555" />
@@ -73,8 +137,11 @@ export default class LandlordInfo extends Component {
 						<label className="control-label">Zip Code<span className='text text-error'><b>*</b></span> </label>	
 						<input id="addr_zip" name="curAddrZip" type="text" maxLength="5" size="5" className=" required  span4 alphanumeric" />
 					</div>	
-
-
+					<div className = "form-group">
+						<button onClick={() => {this.submitForm()}} type="submit" className="button button1">
+  						<span className="glyphicon glyphicon-circle-arrow-right" aria-hidden="true"></span> Submit
+						</button>
+					</div>
 				</div>         
             </form>
         </div>

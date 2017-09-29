@@ -34,7 +34,7 @@ ReactDOM.render(
               <Route path='/maintenance' component={Maintenance}/>
               <Route path='/rental' component={Property}/>
               {/* <Route path='/api/:model_name' component={Api}/> */}
-              <Route path='/landlordinfo' component={LandlordInfo}/>
+              <Route path='/landlords' component={LandlordInfo}/>
           </Route>
     </Router>
   </Provider>

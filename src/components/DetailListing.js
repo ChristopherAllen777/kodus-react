@@ -15,7 +15,7 @@ export default class DetailListing extends Component {
             <div style= { { backgroundColor: 'white' } } id="details-bin" className="row">
             
                 <div style= { { padding: '15px', paddingLeft: '30px' } } className="col-md-6">
-                    <a href="/apply"><button type="button" class="button button1">
+                    <a href="/apply"><button type="button" className="button button1">
                           <span className="glyphicon glyphicon-ok" aria-hidden="true"></span> Apply Now
                     </button></a>
                     <h4> Telephone </h4>

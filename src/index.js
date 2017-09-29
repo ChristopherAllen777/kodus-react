@@ -14,7 +14,9 @@ import Register from './components/Register';
 import OtherRouteSample from './components/OtherRouteSample';
 import Login from './components/Login';
 import Maintenance from './components/Maintenance';
-import Property from './components/Property'
+import Property from './components/Property';
+import Api from './components/Api';
+import LandlordInfo from './components/LandlordInfo';
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
@@ -31,6 +33,8 @@ ReactDOM.render(
               <Route path='/users/login' component={Login}/>
               <Route path='/maintenance' component={Maintenance}/>
               <Route path='/rental' component={Property}/>
+              {/* <Route path='/api/:model_name' component={Api}/> */}
+              <Route path='/landlords' component={LandlordInfo}/>
           </Route>
     </Router>
   </Provider>

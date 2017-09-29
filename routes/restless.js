@@ -46,7 +46,7 @@ module.exports = function(app) {
 
 	// Automated POST endpoint; req.body must include the required field names to make an object,
 	// but this endpoint will work for any sequelize model
-	app.post("/:model_name", function(req, res){
+	app.post("/api/:model_name", function(req, res){
 		let model_name = req.params.model_name;
 		// this takes a route like /maintenance and turns it into the model name Maintenance
 		let sequelize_model_name = capitalize(model_name);

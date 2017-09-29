@@ -42,7 +42,7 @@ export default class LandlordInfo extends MyComponent {
 	}
 
 	submitForm() {
-		// alert(this.firstName.value);
+		alert(this.firstName.value);
 		// alert(this.middleName.value);
 		// alert(this.lastName.value);
 
@@ -51,7 +51,8 @@ export default class LandlordInfo extends MyComponent {
 		});
 
 		let post_body = pluckInputFields(fields, this);
-		axios.post("/landlords", post_body)
+			console.log("Before Axios");
+		axios.post("/api/landlord", post_body)
 		  .then(function(response) {
 			console.log(`Yay, ${response}`);
 		  })

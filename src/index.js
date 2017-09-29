@@ -17,6 +17,7 @@ import Maintenance from './components/Maintenance';
 import Property from './components/Property';
 import Api from './components/Api';
 import LandlordInfo from './components/LandlordInfo';
+import Property_form from './components/property_form'
 
 const createStoreWithMiddleware = applyMiddleware()(createStore);
 
@@ -35,6 +36,7 @@ ReactDOM.render(
               <Route path='/rental' component={Property}/>
               {/* <Route path='/api/:model_name' component={Api}/> */}
               <Route path='/landlords' component={LandlordInfo}/>
+              <Route path='/property_form' component={Property_form}/>
           </Route>
     </Router>
   </Provider>

@@ -10,6 +10,29 @@ body {
     background-color: #cccccc;
   font-family: Roboto;
 }
+
+.navbar.navbar-default {
+  text-align: center;
+}
+
+#navbar.navbar-right{
+  float: none;
+}
+
+#navbar ul{
+  float: none;
+  display: table;
+  list-style: none;
+  margin: 0 auto;
+}
+
+#navbar li{
+  display:inline;
+}
+
+#navbar a{
+  padding: 15px 40px;
+}
 .nav>li>a {
     position: relative;
     display: block;

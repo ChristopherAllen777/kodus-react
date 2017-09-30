@@ -7,14 +7,33 @@ module.exports = {
     publicPath: '/',
     filename: 'bundle.js'
   },
+  devtool: 'eval-source-map',
   module: {
     loaders: [{
-      exclude: /node_modules/,
+      // exclude: /node_modules/,
       loader: 'babel',
       query: {
-        presets: ['react', 'es2015', 'stage-1']
+        presets: ['react', 'es2015', 'stage-1'],
+        plugins: ['emotion']
       }
-    }]
+    },
+    {
+      test: /\.css$/,
+      loader: 'style-loader!css-loader'
+    },
+    {
+      test: /\.png$/,
+      loader: 'url-loader?limit=100000'
+    },
+    {
+      test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
+      loader: 'url-loader?limit=10000&mimetype=application/font-woff'
+    },
+    {
+      test: /\.(ttf|otf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?|(jpg|gif)$/,
+      loader: 'file-loader'
+    }
+  ]
   },
   resolve: {
     extensions: ['', '.js', '.jsx']

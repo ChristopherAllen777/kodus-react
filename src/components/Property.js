@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import ImageSlider from './miscellaneous/ImageSlider';
 import PropertyShortDescription from './property/PropertyShortDescription';
+import MapShowRestaurants from './MapShowRestaurants';
+import PropertySearch from './PropertySearch';
 
 
 let IMAGES_LIST_1 = [
@@ -34,6 +36,8 @@ export default class Property extends Component {
                     <div id="comment">
                         Search through our list of properties. View the details to learn more about one that interests you!
                     </div>
+						<PropertySearch />
+						<MapShowRestaurants />
                 </div>
 
                 <PropertyShortDescription

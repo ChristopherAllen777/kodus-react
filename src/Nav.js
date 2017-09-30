@@ -30,7 +30,7 @@ export default class Nav extends Component {
                 <nav className="navbar navbar-default">
                     <div className="container-fluid">
                         <div className="navbar-header navbar-brand">
-                            <a href="/">React starter kit</a>
+                            <a href="/"> <img id="home-logo" src="https://scontent-atl3-1.xx.fbcdn.net/v/t1.0-9/20728328_10159233903720397_5439598019097317868_n.jpg?oh=a4d54f2f57d612d0d7fcdd0c80f2f786&oe=5A873A10"></img> </a>
                         </div>
                     </div>
                     <div id="navbar" className="navbar-right">
@@ -74,6 +74,7 @@ export default class Nav extends Component {
                             <li><Link activeClassName="active" to="/users/login" onlyActiveOnIndex>User Login</Link></li>
                             <li><Link activeClassName="active" to="/maintenance" onlyActiveOnIndex>Maintenance</Link></li>
                             <li><Link activeClassName="active" to="/rental" onlyActiveOnIndex>Property</Link></li>
+                            <li><Link activeClassName="active" to="/dashboard" onlyActiveOnIndex>Dashboard</Link></li>
                     
                         </ul> 
                     </div>

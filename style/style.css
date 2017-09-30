@@ -119,3 +119,20 @@ body {
     border-bottom: 0;
   }
 }
+#home-logo{
+  width: 100px;
+}
+#listing{
+  text-align: center;
+}
+button.w3-button.w3-black.w3-display-left {
+  float: left;
+}
+
+.container-fluid {
+padding-right: 15px;
+padding-left: 15px;
+padding-bottom: 23px;
+margin-right: auto;
+margin-left: auto;
+}

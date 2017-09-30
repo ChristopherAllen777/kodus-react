@@ -12,19 +12,7 @@ export default class Register extends Component {
                         </div>
             
                     <div className="row">
-                        <div className="col-md-6">
-                            <ul id="notDevoured">
-                                {/* {{#each rental}} */}
-                                        <div className="notDevouredList">
-                                            {/* {{this.id}}. {{this.property_name}} */}
-                                            <form action="/{{this.id}}?_method=PUT" method="POST" id="devourIt">
-                                                <input type="hidden" name="devoured" value="true"/>
-                                                <button type="submit" id="devourBtn">Devour it!</button>
-                                            </form>
-                                        </div>
-                                {/* {{/each}} */}
-                            </ul>
-                        </div>
+
                     </div>
                 </div>
             </div>

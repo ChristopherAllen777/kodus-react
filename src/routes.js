@@ -14,7 +14,8 @@ import Register from './components/Register';
 import OtherRouteSample from './components/OtherRouteSample';
 import Login from './components/Login';
 import Maintenance from './components/Maintenance';
-import Property from './components/Property'
+import Property from './components/Property';
+import Dashboard from './components/Dashboard';
 
 const auth = new Auth();
 
@@ -50,6 +51,7 @@ export const makeMainRoutes = () => {
               <Route path='/users/login' component={Login}/>
               <Route path='/maintenance' component={Maintenance}/>
               <Route path='/rental' component={Property}/>
+              <Route path='/dashboard' component={Dashboard}/>
               </Switch>
               {/* <Route path='/detail' component={DetailListing}/> */}
               

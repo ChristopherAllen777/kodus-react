@@ -51,7 +51,7 @@ export const makeMainRoutes = () => {
               <Route path='/thankyoumaintenance' component={ThankYouMaintenance}/>
               <Route path='/users/register' component={Register}/>
               <Route path='/other-route' component={OtherRouteSample}/>
-              <Route path='/users/login' component={Login}/>
+              {/* <Route path='/users/login' component={Login}/> */}
               <Route path='/maintenance' component={Maintenance}/>
               <Route path='/rental' component={Property}/>
               <Route path="/profile" render={(props) => (

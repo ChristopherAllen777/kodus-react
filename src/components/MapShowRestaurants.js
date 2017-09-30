@@ -18,7 +18,7 @@ export default class MapShowRestaurants extends Component {
     }
 
     render() {
-        let titleText = "Order Food";
+        let titleText = "Property Search Locations";
         let description = ""
         let markersData = [
             {callback: this.clickMarkerCustomers, params: [2], coordinates: {lat: 30.24, lng: -97.45}},

@@ -25,16 +25,16 @@ ReactDOM.render(
       <Router history={browserHistory}>
           <Route path="/" component={Nav}>
               <IndexRoute component={Homepage}/>
-              <Route path='/detail' component={DetailListing}/>
-              <Route path='/thankyou' component={ThankYou}/>
-              <Route path='/thankyoumaintenance' component={ThankYouMaintenance}/>
-              <Route path='/users/register' component={Register}/>
-              <Route path='/other-route' component={OtherRouteSample}/>
-              <Route path='/users/login' component={Login}/>
-              <Route path='/maintenance' component={Maintenance}/>
-              <Route path='/rental' component={Property}/>
+              <Route path="/detail" component={DetailListing}/>
+              <Route path="/thankyou" component={ThankYou}/>
+              <Route path="/thankyoumaintenance" component={ThankYouMaintenance}/>
+              <Route path="/users/register" component={Register}/>
+              <Route path="/other-rout" component={OtherRouteSample}/>
+              <Route path="/users/login" component={Login}/>
+              <Route path="/maintenance" component={Maintenance}/>
+              <Route path="/rental" component={Property}/>
               {/* <Route path='/api/:model_name' component={Api}/> */}
-              <Route path='/landlords' component={LandlordInfo}/>
+              <Route path="/api/landlord" component={LandlordInfo}/>
           </Route>
     </Router>
   </Provider>

@@ -9,6 +9,7 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const methodOverride = require("method-override");
+const path = require("path");
 // Requiring our models for syncing
 const db = require("./models");
 

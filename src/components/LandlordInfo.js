@@ -43,7 +43,7 @@ export default class LandlordInfo extends MyComponent {
 
 	submitForm() {
 		alert(this.firstName.value);
-		// alert(this.middleName.value);
+		alert(this.addr_zip.value);
 		// alert(this.lastName.value);
 
 		let fields = INPUT_FIELD_DATA.map(function(dataset) {
@@ -62,6 +62,8 @@ export default class LandlordInfo extends MyComponent {
 	}
 
     render () {
+
+		
 		let self = this;
 		let inputBoxes = INPUT_FIELD_DATA.map(function(dataset) {
 			return (

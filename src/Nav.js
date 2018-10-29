@@ -12,7 +12,7 @@ export default class Nav extends React.Component {
                 <nav className="navbar navbar-default">
                     <div className="container-fluid">
                         <div className="navbar-header navbar-brand">
-                            <a href="/">React starter kit</a>
+                            <a href="/"><h1>Kodus</h1></a>
                         </div>
                     </div>
                     <div id="navbar" className="navbar-right">

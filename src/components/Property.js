@@ -5,11 +5,11 @@ import PropertyShortDescription from './property/PropertyShortDescription';
 
 
 let IMAGES_LIST_1 = [
-    "https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/20664569_10159233973105397_8131932104020616398_n.jpg?oh=b671a890a2c355b0dbc3bda988d1b3f4&oe=59EF537A",
-    "https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/20770288_10159233963145397_3756501036429277570_n.jpg?oh=fd21373ed48be921bdcdcaee4126ce22&oe=59EFD2ED",
-    "https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/20664813_10159233963140397_3185855072053004134_n.jpg?oh=2a1bf89f63c021034725141f8b4407f1&oe=5A32E164",
-    "https://scontent-dft4-1.xx.fbcdn.net/v/t1.0-9/20728279_10159233963245397_6375633952423366008_n.jpg?oh=2b1552be59db3a904e8c4a2ab85822c1&oe=5A28ABBE",
-    "https://scontent-dft4-1.xx.fbcdn.net/v/t31.0-8/20689907_10159233963255397_6662457968072453830_o.jpg?oh=a930616fedb1230cbb4bb0cc367987ff&oe=59F00437",
+    "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/20663658_10159233876730397_5345901697927317524_n.jpg?_nc_cat=102&_nc_ht=scontent-dfw5-2.xx&oh=b7273341a1dffc7d17b69eae42e137fb&oe=5C877DD1",
+    "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/20770288_10159233963145397_3756501036429277570_n.jpg?_nc_cat=103&_nc_ht=scontent-dfw5-2.xx&oh=874cfeb20c9ad683e6ea7e1e97e1fc47&oe=5C4115ED",
+    "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/20664813_10159233963140397_3185855072053004134_n.jpg?_nc_cat=108&_nc_ht=scontent-dfw5-2.xx&oh=68260b277ea9b796e74fbf42959964dc&oe=5C842464",
+    "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/20728279_10159233963245397_6375633952423366008_n.jpg?_nc_cat=100&_nc_ht=scontent-dfw5-2.xx&oh=2843b58ccf4397a67e9976281917c3da&oe=5C79EEBE",
+    "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/20728279_10159233963245397_6375633952423366008_n.jpg?_nc_cat=100&_nc_ht=scontent-dfw5-2.xx&oh=2843b58ccf4397a67e9976281917c3da&oe=5C79EEBE",
 ];
 
 let PROPERTY_OBJECT_1 = {

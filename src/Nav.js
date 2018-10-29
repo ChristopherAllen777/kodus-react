@@ -12,10 +12,26 @@ export default class Nav extends React.Component {
                 <nav className="navbar navbar-default">
                     <div className="container-fluid">
                         <div className="navbar-header navbar-brand">
-                            <a href="/"><h1>Kodus</h1></a>
+                        <Link activeClassName="active" to="/" onlyActiveOnIndex><img width="150px" src="public/assets/images/koduslogo-colored.jpg"></img></Link>
+                        </div>
+                        <div className="dropdown">
+                        <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            React Page Links
+                        </button>
+                        <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <li><Link activeClassName="active" to="/" onlyActiveOnIndex>Home</Link></li>
+                            <li><Link activeClassName="active" to="/detail" onlyActiveOnIndex>Detail Listing</Link></li>
+                            <li><Link activeClassName="active" to="/thankyou" onlyActiveOnIndex>Thank You</Link></li>
+                            <li><Link activeClassName="active" to="/thankyoumaintenance" onlyActiveOnIndex>Thank You Maintenance</Link></li>
+                            <li><Link activeClassName="active" to="/users/register" onlyActiveOnIndex>Register</Link></li>
+                            <li><Link activeClassName="active" to="/other-route" onlyActiveOnIndex>Other route</Link></li>
+                            <li><Link activeClassName="active" to="/users/login" onlyActiveOnIndex>User Login</Link></li>
+                            <li><Link activeClassName="active" to="/maintenance" onlyActiveOnIndex>Maintenance</Link></li>
+                            <li><Link activeClassName="active" to="/rental" onlyActiveOnIndex>Property</Link></li>
+                        </div>
                         </div>
                     </div>
-                    <div id="navbar" className="navbar-right">
+                    {/* <div id="navbar" className="navbar-right">
                         <ul className="nav navbar-nav">
                             <li><Link activeClassName="active" to="/" onlyActiveOnIndex>Home</Link></li>
                             <li><Link activeClassName="active" to="/detail" onlyActiveOnIndex>Detail Listing</Link></li>
@@ -27,8 +43,9 @@ export default class Nav extends React.Component {
                             <li><Link activeClassName="active" to="/maintenance" onlyActiveOnIndex>Maintenance</Link></li>
                             <li><Link activeClassName="active" to="/rental" onlyActiveOnIndex>Property</Link></li>
                         </ul>
-                    </div>
+                    </div> */}
                 </nav>
+                
 
                 <div className="container">
                     {this.props.children}

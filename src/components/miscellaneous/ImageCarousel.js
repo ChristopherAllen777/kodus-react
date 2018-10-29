@@ -17,7 +17,7 @@ export default class ImageCarousel extends MyComponent {
       //   https://bitbucket.org/codyc54321/react-examples/src/22be4d59cd2ab4733e01710b4e76d6b41d1e5276/views/clock.tpl?at=master&fileviewer=file-view-default
         this.carousel_timer_id = setInterval(
             () => this.changeCarouselImage(),
-            (this.props.timing * 3000) // setInterval needs milliseconds
+            (this.props.timing * 2000) // setInterval needs milliseconds
         )
     }
 

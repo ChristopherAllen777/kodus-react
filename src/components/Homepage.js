@@ -47,7 +47,7 @@ export default class App extends Component {
                 <br/>
             </div>
             <div className="col-sm-6">
-                <img style= { { display: 'block', margin: 'auto', width: '80%', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' } } src="https://scontent.fmkc1-1.fna.fbcdn.net/v/t1.0-9/20767726_10159221434560397_3520340775677831607_n.jpg?oh=35493445648f706d26b33123f6a4ff03&oe=59F01C62" />
+                <img style= { { display: 'block', margin: 'auto', width: '60%', height: '400px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' } } src="../../public/assets/images/app-kodus.png" />
                 <br/>
             </div>
         </div>

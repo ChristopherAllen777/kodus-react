@@ -14,15 +14,16 @@ export default class Nav extends React.Component {
         return (
             <div>
                 <nav className="navbar navbar-default">
+               
                     <div className="container-fluid">
 
                         <div className="navbar-header navbar-brand">
                             <Link activeClassName="active" to="/" onlyActiveOnIndex><img width="150px" src="public/assets/images/koduslogo-colored.jpg"></img></Link>
-                        </div>
+                        </div>      
 
                         <div className="dropdown">
                             <button className="btn btn-secondary dropdown-toggle" style={buttonStyle} type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                React Page Links
+                                Menu
                             </button>
                             <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
                                 <li><Link activeClassName="active" to="/" onlyActiveOnIndex>Home</Link></li>
@@ -35,7 +36,7 @@ export default class Nav extends React.Component {
                                 <li><Link activeClassName="active" to="/maintenance" onlyActiveOnIndex>Maintenance</Link></li>
                                 <li><Link activeClassName="active" to="/rental" onlyActiveOnIndex>Property</Link></li>
                             </div>
-                        </div>
+                        </div> 
 
                     </div>
                 </nav>

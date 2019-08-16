@@ -5,11 +5,12 @@ import PropertyShortDescription from './property/PropertyShortDescription';
 
 
 let IMAGES_LIST_1 = [
-    "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/20663658_10159233876730397_5345901697927317524_n.jpg?_nc_cat=102&_nc_ht=scontent-dfw5-2.xx&oh=b7273341a1dffc7d17b69eae42e137fb&oe=5C877DD1",
-    "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/20770288_10159233963145397_3756501036429277570_n.jpg?_nc_cat=103&_nc_ht=scontent-dfw5-2.xx&oh=874cfeb20c9ad683e6ea7e1e97e1fc47&oe=5C4115ED",
-    "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/20664813_10159233963140397_3185855072053004134_n.jpg?_nc_cat=108&_nc_ht=scontent-dfw5-2.xx&oh=68260b277ea9b796e74fbf42959964dc&oe=5C842464",
-    "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/20728279_10159233963245397_6375633952423366008_n.jpg?_nc_cat=100&_nc_ht=scontent-dfw5-2.xx&oh=2843b58ccf4397a67e9976281917c3da&oe=5C79EEBE",
-    "https://scontent-dfw5-2.xx.fbcdn.net/v/t1.0-9/20728279_10159233963245397_6375633952423366008_n.jpg?_nc_cat=100&_nc_ht=scontent-dfw5-2.xx&oh=2843b58ccf4397a67e9976281917c3da&oe=5C79EEBE",
+    "../../../public/assets/images/details/detail-1.jpg",
+    "../../../public/assets/images/details/detail-2.jpg",
+    "../../../public/assets/images/details/detail-3.jpg",
+    "../../../public/assets/images/details/detail-4.jpg",
+    "../../../public/assets/images/details/detail-5.jpg"
+
 ];
 
 let PROPERTY_OBJECT_1 = {

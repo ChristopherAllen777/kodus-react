@@ -85,7 +85,7 @@ export default class App extends Component {
 
         <ContentBlock
             image_location="left"
-            url="https://blankslatepages.s3.amazonaws.com/56ec2c02d59fc-property-management-duties.jpg"
+            url="../../../public/assets/images/kodus-manager.jpg"
             header={MANAGER_TENANT_HEADER}
             body_text={MANAGER_TENANT_TEXT}
         />
@@ -94,7 +94,7 @@ export default class App extends Component {
 
         <ContentBlock
             image_location="right"
-            url="http://cafeseo.ir/wp-content/uploads/mobile-phones.jpg"
+            url="../../../public/assets/images/rental-preview.jpg"
             header={RENTAL_SEARCH_HEADER}
             body_text={RENTAL_SEARCH_TEXT}
         />

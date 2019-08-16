@@ -17,9 +17,7 @@ const CAROUSEL_IMAGES = [
     "../../../public/assets/images/home/carousel-3.jpg",
     "../../../public/assets/images/home/carousel-4.jpg",
     "../../../public/assets/images/home/carousel-5.jpg",
-
 ]
-
 
 export default class App extends Component {
 
@@ -32,11 +30,13 @@ export default class App extends Component {
     return (
       <div>
         <div className="row">
-            <div id="company-decribe" className="col-sm-6">
+            <div id="company-decribe" className="col-sm-12 col-md-6">
+                <br></br>
                 <h1>Kodus</h1>
-                <h4> Property Managment App</h4>
+                <h6> Property Managment App</h6>
                 <hr/>
                 <h2 style= { { color: '#904bea', fontStyle: 'italic' } } > Easy. Simple. Quick.</h2>
+                <br></br>
                 <h3>Software that works for property mangers & tenants</h3>
                 <p> Kodus is a property managment app that is designed for propert managers and renters. It allows
                     for the search of rental properties and for tenant maintence requests. Property managers can
@@ -45,8 +45,8 @@ export default class App extends Component {
                 </p>
                 <br/>
             </div>
-            <div className="col-sm-6">
-                <img style= { { display: 'block', margin: 'auto', width: '60%', height: '400px', boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' } } src="../../public/assets/images/app-kodus.png" />
+            <div className="col-sm-12 col-md-6">
+                <img id="appImage" src="../../public/assets/images/app-kodus.png" />
                 <br/>
             </div>
         </div>

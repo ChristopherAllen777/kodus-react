@@ -1,13 +1,10 @@
-/*Index Body For Handlebars*/
-
-/* Space out content a bit */
 body {
   background: #d8d8d8;
   padding-top: 20px;
   padding-bottom: 20px;
-    background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/swirl_pattern.png");
-    /* background-image: url("https://i0.wp.com/webdesignledger.com/wp-content/uploads/2013/01/patterns03.jpg?w=970"); */
-    background-color: #cccccc;
+  background-image: url("https://www.toptal.com/designers/subtlepatterns/patterns/swirl_pattern.png");
+  /* background-image: url("https://i0.wp.com/webdesignledger.com/wp-content/uploads/2013/01/patterns03.jpg?w=970"); */
+  background-color: #cccccc;
   font-family: Roboto;
 }
 h1 {
@@ -16,15 +13,31 @@ h1 {
 }
 
 .nav>li>a {
-    position: relative;
-    display: block;
-    padding: 10px 15px;
-    color: #904bea;
-    background-color: #ffffff;
+  position: relative;
+  display: block;
+  padding: 10px 15px;
+  color: #904bea;
+  background-color: #ffffff;
 }
-.container {
+#main-container {
+  padding: 10px;
+  padding-bottom: 15px;
   background: #f9f9f9;
-  padding: 20px;
+  border-top: 8px solid #8f4aea;
+  border-bottom: 8px solid #8f4aea;
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#appImage {
+  display: block; 
+  margin: auto;
+  width: 350px;
+  height: 400px; 
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
 }
 #header {
   text-align: center;

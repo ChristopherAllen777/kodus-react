@@ -12,13 +12,12 @@ let RENTAL_SEARCH_HEADER = "Rental Search Made Easy";
 let RENTAL_SEARCH_TEXT = "For users looking for quick search and close manangment of their rental Kodus is the solution. Now you can just log into Kodus and make quick easy maintence requests straight to your property manager."
 
 const CAROUSEL_IMAGES = [
-    "https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/20776637_10159232079495397_1866555496954307768_o.jpg?_nc_cat=105&_nc_ht=scontent-dfw5-1.xx&oh=762ab54d4c31c85276ce550502238681&oe=5C3FB297",
-    "https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/20728899_10159233836880397_4666321340847713491_o.jpg?_nc_cat=104&_nc_ht=scontent-dfw5-1.xx&oh=116f7f9eb715b8a92d696de45cb11c3d&oe=5C4724B8",
-    "https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/20776656_10159233846215397_1075554196116138187_o.jpg?_nc_cat=107&_nc_ht=scontent-dfw5-1.xx&oh=a9a3cd4e9da39f18550c563c32bbc898&oe=5C86A28D",
-    "https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/20690153_10159233862390397_5525387364445532266_o.jpg?_nc_cat=107&_nc_ht=scontent-dfw5-1.xx&oh=b3b0eafd0243ad6eab5e22259937b02b&oe=5C49E0C3",
-    "https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/20776568_10159233862400397_2799772126915008308_o.jpg?_nc_cat=102&_nc_ht=scontent-dfw5-1.xx&oh=aeb6bccc58ad1532b557dd3cfe9ca73e&oe=5C7DD001",
-    "https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/20776568_10159233862400397_2799772126915008308_o.jpg?_nc_cat=102&_nc_ht=scontent-dfw5-1.xx&oh=aeb6bccc58ad1532b557dd3cfe9ca73e&oe=5C7DD001",
-    "https://scontent-dfw5-1.xx.fbcdn.net/v/t31.0-8/20776568_10159233862400397_2799772126915008308_o.jpg?_nc_cat=102&_nc_ht=scontent-dfw5-1.xx&oh=aeb6bccc58ad1532b557dd3cfe9ca73e&oe=5C7DD001",
+    "../../../public/assets/images/home/carousel-1.jpg",
+    "../../../public/assets/images/home/carousel-2.jpg",
+    "../../../public/assets/images/home/carousel-3.jpg",
+    "../../../public/assets/images/home/carousel-4.jpg",
+    "../../../public/assets/images/home/carousel-5.jpg",
+
 ]
 
 
@@ -56,7 +55,7 @@ export default class App extends Component {
         <div style={ {backgroundColor: 'white', paddingTop: 20} } className="row">
             <div id="overview" className="col-sm-12">
                 <div className="w3-content w3-section" style={ {maxWidth: 722} }>
-                    <ImageCarousel component={SContentImage} images={CAROUSEL_IMAGES} timing={2} />
+                    <ImageCarousel component={SContentImage} images={CAROUSEL_IMAGES} timing={3} />
                 </div>
             </div>
         </div>
